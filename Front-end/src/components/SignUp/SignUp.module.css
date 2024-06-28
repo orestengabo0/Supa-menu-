@@ -1,0 +1,25 @@
+.rounded {
+    width: 40%;
+}
+.login {
+    width: 100%;
+    box-shadow: 0 0 3px 4px #db94114d;
+}
+.contain {
+    line-height: 2;
+}
+.forgot-password {
+    cursor: pointer;
+}
+.forgot-password:hover {
+    color: white;
+}
+.signup {
+    cursor: pointer;
+}
+.reset {
+    cursor: pointer;
+}
+.right {
+    align-content: center;
+}

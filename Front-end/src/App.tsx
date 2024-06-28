@@ -1,10 +1,10 @@
 import React from "react";
-import WelcomePage from "./components/WelcomePage/WelcomePage";
+import SignUp from "./components/SignUp/SignUp";
 
 const App = () => {
   return (
     <div>
-      <WelcomePage />
+      <SignUp />
     </div>
   );
 };
