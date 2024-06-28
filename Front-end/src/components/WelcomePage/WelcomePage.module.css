@@ -1,0 +1,10 @@
+.signin {
+    box-shadow: 0 1px 3px white;
+}
+.lower-part {
+    background-image: url('../../assets/bg-image.png');
+    color: white;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
