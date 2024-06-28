@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./SignUp.module.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -88,9 +89,9 @@ const SignUp = () => {
         <div className="lh-sm">
           <p className="text-center mt-5 text-secondary">
             Already have an account?{" "}
-            <span className={`text-primary signin ${styles["signin"]}`}>
+            <Link to={'/signin'} className={`text-primary signin ${styles["signin"]}`}>
               Login
-            </span>
+            </Link>
           </p>
         </div>
       </form>

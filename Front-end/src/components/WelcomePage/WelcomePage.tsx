@@ -1,9 +1,9 @@
-import React from "react";
 import styles from "./WelcomePage.module.css";
 import { FaUserEdit } from "react-icons/fa";
 import StepCards from "./StepCards/StepCards";
 import { FaUtensils } from "react-icons/fa6";
 import { BiSolidOffer } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const WelcomePage = () => {
   return (
@@ -27,21 +27,20 @@ const WelcomePage = () => {
               <p className="text-white">for free and get more revenue!</p>
             </div>
             <div>
-              <button className=" text-white btn btn-warning">
+              <Link to={"/signup"} className=" text-white btn btn-warning">
                 Register your Restaurant
-              </button>
-              <button
+              </Link>
+              <Link
+                to={"/signin"}
                 className={`mx-3 text-white btn btn-dark signin ${styles.signin}`}
               >
                 Restaurant already registered? Sign in
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className={`lower-part ${styles["lower-part"]} p-5`}
-      >
+      <div className={`lower-part ${styles["lower-part"]} p-5`}>
         <h3 className="text-black text-center fw-bold">How it works</h3>
         <div className="d-flex justify-content-between">
           <StepCards
