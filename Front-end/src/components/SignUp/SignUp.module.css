@@ -1,0 +1,16 @@
+.rounded {
+    width: 40%;
+}
+.signup {
+    width: 100%;
+    box-shadow: 0 0 3px 4px #db94114d;
+}
+.contain {
+    line-height: 2;
+}
+.signin {
+    cursor: pointer;
+}
+.right {
+    align-content: center;
+}

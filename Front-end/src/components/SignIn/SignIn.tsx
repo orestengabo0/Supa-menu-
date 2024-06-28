@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './SignIn.module.css';
 
-const SignUp = () => {
+const SignIn = () => {
   return (
     <div
       className={`bg-warning p-5 d-flex justify-content-between contain ${styles["contain"]}`}
@@ -35,7 +35,7 @@ const SignUp = () => {
           <input
             type="text"
             id="email"
-            className="form-control"
+            className="form-control "
             placeholder="Password"
           />
         </div>
@@ -57,4 +57,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;
