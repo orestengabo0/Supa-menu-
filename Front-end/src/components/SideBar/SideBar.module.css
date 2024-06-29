@@ -1,0 +1,6 @@
+.overview:hover, .client:hover, .users:hover {
+    background: gray;
+}
+.right {
+    width: 15%;
+}

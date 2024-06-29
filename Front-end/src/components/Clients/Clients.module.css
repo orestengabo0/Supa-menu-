@@ -1,11 +1,8 @@
-.right {
-    width: 15%;
-}
-.overview:hover, .client:hover, .users:hover {
-    background: gray;
-}
 .box {
     height: 60px;
     width: 60px;
     border-radius: 50%;
+}
+.addClient {
+    box-shadow: 0 2px 2px #0000001a;
 }
