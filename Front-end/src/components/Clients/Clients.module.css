@@ -1,0 +1,11 @@
+.right {
+    width: 15%;
+}
+.overview:hover, .client:hover, .users:hover {
+    background: gray;
+}
+.box {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
