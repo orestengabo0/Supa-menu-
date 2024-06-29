@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
-import Badge from "./Badge";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { Dropdown } from "react-bootstrap";
+import Badge from "./Badge";
 
 const ClientTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -70,7 +71,18 @@ const ClientTable = () => {
               <td>
                 <Badge />
               </td>
-              <td><BsThreeDotsVertical /></td>
+              <td>
+                <Dropdown>
+                  <Dropdown.Toggle variant="light" id="dropdown-basic">
+                    <BsThreeDotsVertical />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Update</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Delete</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </td>
             </tr>
           ))}
         </tbody>
