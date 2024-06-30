@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./SignUp.module.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -73,23 +73,31 @@ const SignUp = () => {
             <input
               type={passwordVisible ? "text" : "password"}
               id="password"
-              className={`form-control password ${styles['password']}`}
+              className={`form-control password ${styles["password"]}`}
               placeholder="Password"
             />
-            <span className="input-group-text" onClick={togglePasswordVisibility} style={{ cursor: 'pointer' }}>
+            <span
+              className="input-group-text"
+              onClick={togglePasswordVisibility}
+              style={{ cursor: "pointer" }}
+            >
               {passwordVisible ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
         </div>
-        <button
+        <Link
+          to={"/signin"}
           className={`btn btn-warning fw-semibold text-white mt-3 signup ${styles["signup"]}`}
         >
           Sign Up
-        </button>
+        </Link>
         <div className="lh-sm">
           <p className="text-center mt-5 text-secondary">
             Already have an account?{" "}
-            <Link to={'/signin'} className={`text-primary signin ${styles["signin"]}`}>
+            <Link
+              to={"/signin"}
+              className={`text-primary signin ${styles["signin"]}`}
+            >
               Login
             </Link>
           </p>

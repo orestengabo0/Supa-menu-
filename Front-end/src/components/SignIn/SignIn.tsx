@@ -48,21 +48,26 @@ const SignIn = () => {
           </div>
           <div className="input-group">
             <input
-              type={passwordVisible ? "text":"password"}
+              type={passwordVisible ? "text" : "password"}
               id="email"
               className="form-control "
               placeholder="Password"
             />
-            <span className="input-group-text" style={{cursor: "pointer"}} onClick={togglePasswordVisibility}>
-              {passwordVisible ? <FaEyeSlash/> : <FaEye/>}
+            <span
+              className="input-group-text"
+              style={{ cursor: "pointer" }}
+              onClick={togglePasswordVisibility}
+            >
+              {passwordVisible ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
         </div>
-        <button
+        <Link
+          to={"/pages"}
           className={`btn btn-warning fw-semibold text-white mt-3 login ${styles["login"]}`}
         >
           Login
-        </button>
+        </Link>
         <div className="lh-sm">
           <p className="text-center mt-5 text-secondary">
             Don't have account?{" "}

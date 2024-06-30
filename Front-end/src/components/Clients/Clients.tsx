@@ -1,8 +1,4 @@
-import { RiQrScanFill } from "react-icons/ri";
-import { MdIncompleteCircle } from "react-icons/md";
-import { FaUsers } from "react-icons/fa";
-import { IoSettings, IoSearch, IoNotificationsSharp } from "react-icons/io5";
-import { RiAccountCircleFill } from "react-icons/ri";
+import { IoSearch, IoNotificationsSharp } from "react-icons/io5";
 import styles from "./Clients.module.css";
 import SideBar from "../SideBar/SideBar";
 import AddClient from "../AddClientButton/AddClient";
