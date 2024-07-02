@@ -5,16 +5,17 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import Clients from "./components/Clients/Clients";
 import AddClientForm from "./components/AddClientForm/AddClientForm";
+import Steps from "./components/AppUsageSteps/Steps";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<WelcomePage />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/" element={<Steps />}></Route>
+        {/* <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
-        <Route path="/pages" element={<Clients />}></Route>
-        <Route path="/addClientForm" element={<AddClientForm />}></Route>
+        <Route path="/clientTable" element={<Clients />}></Route>
+        <Route path="/addClientForm" element={<AddClientForm />}></Route> */}
       </Routes>
     </Router>
   );

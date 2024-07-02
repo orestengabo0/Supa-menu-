@@ -63,7 +63,7 @@ const SignIn = () => {
           </div>
         </div>
         <Link
-          to={"/pages"}
+          to={"/clientTable"}
           className={`btn btn-warning fw-semibold text-white mt-3 login ${styles["login"]}`}
         >
           Login

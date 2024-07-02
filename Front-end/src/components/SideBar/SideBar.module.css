@@ -1,6 +1,13 @@
-.overview:hover, .client:hover, .users:hover {
+.overview:hover, .client:hover, .user:hover {
     background: gray;
+    cursor: pointer;
+}
+.overview, .client, .user {
+    margin-top: 10px;
 }
 .right {
     width: 15%;
+}
+.clients, .users, .overview {
+    text-decoration: none;
 }
