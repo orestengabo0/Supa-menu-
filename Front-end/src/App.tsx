@@ -6,12 +6,13 @@ import WelcomePage from "./components/WelcomePage/WelcomePage";
 import Clients from "./components/Clients/Clients";
 import AddClientForm from "./components/AddClientForm/AddClientForm";
 import Steps from "./components/AppUsageSteps/Steps";
+import Overview from "./components/Overview/Overview";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Steps />}></Route>
+        <Route path="/" element={<Overview />}></Route>
         {/* <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/clientTable" element={<Clients />}></Route>

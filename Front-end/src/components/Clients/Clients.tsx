@@ -4,7 +4,6 @@ import styles from "./Clients.module.css";
 import SideBar from "../SideBar/SideBar";
 import AddClient from "../AddClientButton/AddClient";
 import ClientTable from "../TableClients/ClientTable";
-import { Link } from 'react-router-dom'
 
 const Clients = () => {
   const [showSearch, setShowSearch] = useState(false);
