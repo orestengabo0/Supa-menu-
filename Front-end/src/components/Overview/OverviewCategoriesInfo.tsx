@@ -8,7 +8,7 @@ interface Props {
 
 const OverviewCategoriesInfo = ({category, consumer, consumerPrice}:Props) => {
   return (
-    <div className='card p-2'>
+    <div className='card p-3'>
         <div className='d-flex justify-content-between'>
             <h6>{category}</h6>
             <p className='text-warning'>View details</p>

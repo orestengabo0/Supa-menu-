@@ -4,6 +4,7 @@ import { IoNotificationsSharp, IoSearch } from "react-icons/io5";
 import styles from "./Overview.module.css";
 import OverviewCard from "./OverviewCard";
 import OverviewCategoriesInfo from "./OverviewCategoriesInfo";
+import OverviewCreate from "./OverviewCreate";
 
 const Overview = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -55,37 +56,41 @@ const Overview = () => {
           </div>
         </div>
         <div>
-          <div className="mb-5">
-            <div className="row mt-4 mx-3">
-              <div className="col-md-4">
-                <OverviewCategoriesInfo
-                  category="Restaurant"
-                  consumer="Sole luna"
-                  consumerPrice={46000}
-                />
-              </div>
-              <div className="col-md-4">
-                <OverviewCategoriesInfo
-                  category="Hotels"
-                  consumer="Park Inn"
-                  consumerPrice={46000}
-                />
-              </div>
-            </div>
-            <div className="row mt-4 mx-3">
-              <div className="col-md-4">
-                <OverviewCategoriesInfo
-                  category="Pubs"
-                  consumer="Sundowner"
-                  consumerPrice={46000}
-                />
-              </div>
-              <div className="col-md-4">
-                <OverviewCategoriesInfo
-                  category="Cafe"
-                  consumer="Aroma"
-                  consumerPrice={46000}
-                />
+          <div className="row mb-5">
+            <div className="row">
+              <div>
+                <div className="row mt-4 mx-2">
+                  <div className="col-md-4">
+                    <OverviewCategoriesInfo
+                      category="Restaurant"
+                      consumer="Sole luna"
+                      consumerPrice={46000}
+                    />
+                  </div>
+                  <div className="col-md-4">
+                    <OverviewCategoriesInfo
+                      category="Hotels"
+                      consumer="Park Inn"
+                      consumerPrice={46000}
+                    />
+                  </div>
+                </div>
+                <div className="row mt-4 mx-2">
+                  <div className="col-md-4">
+                    <OverviewCategoriesInfo
+                      category="Pubs"
+                      consumer="Sundowner"
+                      consumerPrice={46000}
+                    />
+                  </div>
+                  <div className="col-md-4">
+                    <OverviewCategoriesInfo
+                      category="Cafe"
+                      consumer="Aroma"
+                      consumerPrice={46000}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
